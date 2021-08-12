@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice TVA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculer une TVA</h1>
+    <section>
+        
+        <h2>Choix de la TVA</h2>
+        <div class="tvaChoices">
+            <div class="taux">
+                <h3>Taux de TVA</h3>
+                <div class="saisie tauxDeTva englobeCaseCadreTva" title="Saisir le taux de TVA">
+                    <input type="tel" name="tauxTVA" id="tauxTVA" title="Saisir le % de charge" value="0 €" class="chiffre input-calcul">
+                </div>
+            </div>
+            <div class="appliqueTauxTVA tauxDeTva">
+                <h3>TVA courantes</h3>
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 20 %" value="20 %" class="input-calcul">
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 10 %" value="10 %" class="input-calcul">
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 8.5 %" value="8.5 %" class="input-calcul">
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 7 %" value="7 %" class="input-calcul">
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 5.5 %" value="5.5 %" class="input-calcul">
+                <input type="button" name="appliqueTauxTVA" title="Cliquer pour appliquer une TVA de 19.6 %" value="19.6 %" class="input-calcul">
+            </div>
+        </div>
+
+        <h2>Calcul des différents montants</h2>
+        <div class="calcul">
+            <div class="saisie">
+                <h3>Montant Hors Taxes</h3>
+                <input type="tel" name="montantHT" id="montantHT" title="Saisir le montant HT" value="0 €" class="chiffre input-calcul" />
+            </div>
+            <div><p>+</p></div>
+            <div class="saisie">
+                <h3>Montant TVA</h3>
+                <input type="tel" name="montantTVA" id="montantTVA" title="Saisir le montant TVA" value="0 €" class="chiffre input-calcul" />
+            </div>
+            <div><p>=</p></div>
+            <div class="saisie">
+                <h3>Montant TTC</h3>
+                <input type="tel" name="montantTTC" id="montantTTC" title="Saisir le montant TTC" value="0 €" class="chiffre input-calcul" />
+            </div>
+        </div>         
+        <div id="totalTva">
+            <p class="messaIntro">Cliquer sur n'importe quel nombre pour le modifier.</p>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
